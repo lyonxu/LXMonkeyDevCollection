@@ -4,6 +4,7 @@ The collection of MonkeyDev
 
 
 ## 腾讯去广告
+App版本：v5.3.0
 
 In XXXDylib.m files, add these codes.
 
@@ -21,6 +22,7 @@ CHConstructor{
 
 
 ## 爱奇艺去广告
+App版本：v9.10.0
 
 In XXXDylib.xm files, add these codes.
 
