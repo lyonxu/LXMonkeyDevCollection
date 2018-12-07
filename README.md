@@ -8,7 +8,7 @@ App版本：v5.3.0
 
 In XXXDylib.m files, add these codes.
 
-`
+```
 CHDeclareClass(KKAdsViewController);
 CHOptimizedMethod(0, self, KKAdsViewController *, KKAdsViewController, init)
 {
@@ -18,7 +18,7 @@ CHConstructor{
     CHLoadLateClass(KKAdsViewController);
     CHClassHook(0, KKAdsViewController,init);
 }
-`
+```
 
 
 ## 爱奇艺去广告
@@ -26,7 +26,7 @@ App版本：v9.10.0
 
 In XXXDylib.xm files, add these codes.
 
-`
+```
 %hook AdsProxy
 + (id)GetAdExtraInfoWithAdId_oc:(unsigned int)arg1{return nil;}    // IMP=0x00000001020d3ba8
 + (id)GetExportLog_oc{return nil;}    // IMP=0x00000001020d3c68
@@ -50,4 +50,4 @@ In XXXDylib.xm files, add these codes.
 return nil;
 }
 %end
-`
+```
